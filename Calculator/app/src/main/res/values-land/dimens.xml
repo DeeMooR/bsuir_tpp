@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Размеры для горизонтального режима -->
+    <dimen name="button_height">22pt</dimen>
+    <dimen name="oldText_height">0pt</dimen>
+</resources>
