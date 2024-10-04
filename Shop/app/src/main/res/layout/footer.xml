@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@color/blue">
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/coral"
+        android:layout_marginRight="20dp"
+        android:onClick="clickShow"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="SHOW BASKET"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/footerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:text="Count of goods = 0"/>
+</LinearLayout>
