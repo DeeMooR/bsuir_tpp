@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:textColor="@color/black"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.viewpager2.widget.ViewPager2>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/pagerTabStrip1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+        </com.google.android.material.tabs.TabLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/pagerTabStrip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+        </com.google.android.material.tabs.TabLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/pagerTabStrip3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+        </com.google.android.material.tabs.TabLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/pagerTabStrip4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.mynotes.FragmentShow"
+        android:id="@+id/mainFragShow"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.mynotes.FragmentAdd"
+        android:id="@+id/mainFragAdd"/>
+
+</LinearLayout>
